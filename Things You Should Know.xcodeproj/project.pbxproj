@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A27041AD7806958CEA9A5F9 /* Pods_Things_You_Should_Know.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40477BFEE4EE399033A90C2 /* Pods_Things_You_Should_Know.framework */; };
+		9F22364924A98E3B00126CB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F22364824A98E3B00126CB2 /* GoogleService-Info.plist */; };
 		9F46CCE524A8245F0028C52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46CCE424A8245F0028C52F /* AppDelegate.swift */; };
 		9F46CCE724A8245F0028C52F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46CCE624A8245F0028C52F /* SceneDelegate.swift */; };
 		9F46CCE924A8245F0028C52F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F46CCE824A8245F0028C52F /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F22364824A98E3B00126CB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F46CCE124A8245F0028C52F /* Things You Should Know.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Things You Should Know.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F46CCE424A8245F0028C52F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F46CCE624A8245F0028C52F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		9F46CCED24A824640028C52F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F46CCF024A824640028C52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F46CCF224A824640028C52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17D251BC9656431D7EBD529 /* Pods-Things You Should Know.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Things You Should Know.debug.xcconfig"; path = "Target Support Files/Pods-Things You Should Know/Pods-Things You Should Know.debug.xcconfig"; sourceTree = "<group>"; };
+		C58A51DAF86F82BBA5F64667 /* Pods-Things You Should Know.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Things You Should Know.release.xcconfig"; path = "Target Support Files/Pods-Things You Should Know/Pods-Things You Should Know.release.xcconfig"; sourceTree = "<group>"; };
+		F40477BFEE4EE399033A90C2 /* Pods_Things_You_Should_Know.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Things_You_Should_Know.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A27041AD7806958CEA9A5F9 /* Pods_Things_You_Should_Know.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				9F46CCE324A8245F0028C52F /* Things You Should Know */,
 				9F46CCE224A8245F0028C52F /* Products */,
+				ED1EA1636B90C5956BF3CF60 /* Pods */,
+				C1FE43AE14D8A38A53733F49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		9F46CCE324A8245F0028C52F /* Things You Should Know */ = {
 			isa = PBXGroup;
 			children = (
+				9F22364824A98E3B00126CB2 /* GoogleService-Info.plist */,
 				9F46CCE424A8245F0028C52F /* AppDelegate.swift */,
 				9F46CCE624A8245F0028C52F /* SceneDelegate.swift */,
 				9F46CCE824A8245F0028C52F /* ViewController.swift */,
@@ -67,6 +77,23 @@
 			path = "Things You Should Know";
 			sourceTree = "<group>";
 		};
+		C1FE43AE14D8A38A53733F49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F40477BFEE4EE399033A90C2 /* Pods_Things_You_Should_Know.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED1EA1636B90C5956BF3CF60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A17D251BC9656431D7EBD529 /* Pods-Things You Should Know.debug.xcconfig */,
+				C58A51DAF86F82BBA5F64667 /* Pods-Things You Should Know.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F46CCF524A824640028C52F /* Build configuration list for PBXNativeTarget "Things You Should Know" */;
 			buildPhases = (
+				09ABAD549002B1A5B604431C /* [CP] Check Pods Manifest.lock */,
 				9F46CCDD24A8245F0028C52F /* Sources */,
 				9F46CCDE24A8245F0028C52F /* Frameworks */,
 				9F46CCDF24A8245F0028C52F /* Resources */,
+				47AB8C89CF1C38FAC9336355 /* [CP] Embed Pods Frameworks */,
+				3129803C005F0FD10318032F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F46CCF124A824640028C52F /* LaunchScreen.storyboard in Resources */,
+				9F22364924A98E3B00126CB2 /* GoogleService-Info.plist in Resources */,
 				9F46CCEE24A824640028C52F /* Assets.xcassets in Resources */,
 				9F46CCEC24A8245F0028C52F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09ABAD549002B1A5B604431C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Things You Should Know-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3129803C005F0FD10318032F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Things You Should Know/Pods-Things You Should Know-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Things You Should Know/Pods-Things You Should Know-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Things You Should Know/Pods-Things You Should Know-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47AB8C89CF1C38FAC9336355 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Things You Should Know/Pods-Things You Should Know-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Things You Should Know/Pods-Things You Should Know-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Things You Should Know/Pods-Things You Should Know-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F46CCDD24A8245F0028C52F /* Sources */ = {
@@ -282,6 +372,7 @@
 		};
 		9F46CCF624A824640028C52F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A17D251BC9656431D7EBD529 /* Pods-Things You Should Know.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +391,7 @@
 		};
 		9F46CCF724A824640028C52F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C58A51DAF86F82BBA5F64667 /* Pods-Things You Should Know.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

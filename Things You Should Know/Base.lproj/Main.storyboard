@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,131 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Things_You_Should_Know" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bmu-ik-MOR">
+                                <rect key="frame" x="78" y="263" width="258" height="370"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tusk" translatesAutoresizingMaskIntoConstraints="NO" id="IcO-Rh-MdA">
+                                        <rect key="frame" x="0.0" y="0.0" width="258" height="258"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="258" id="LGY-ZS-UUK"/>
+                                            <constraint firstAttribute="height" constant="258" id="naG-E8-dYp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67A-sS-Drw" customClass="GIDSignInButton">
+                                        <rect key="frame" x="0.0" y="268" width="258" height="102"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="102" id="Kbh-j4-pVx"/>
+                                            <constraint firstAttribute="width" constant="258" id="kUq-h4-o3C"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bmu-ik-MOR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rpr-7k-KDg"/>
+                            <constraint firstItem="bmu-ik-MOR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z9b-OU-NQM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yJP-mB-PX4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCJ-Wv-boH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="aEq-8R-5m1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J8M-Xz-lo4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="FOz-i3-Fl7">
+                                <rect key="frame" x="0.0" y="44" width="0.0" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RvL-fr-9U8"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybl-Ov-tYh">
+                                <rect key="frame" x="0.0" y="1294" width="0.0" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PuD-tB-t0h"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Home" image="house.fill" catalog="system" id="zDU-2c-3di"/>
+                                    <tabBarItem systemItem="favorites" id="UZO-3y-6ws"/>
+                                    <tabBarItem title="" systemItem="more" id="uw2-Gh-M8x"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ybl-Ov-tYh" firstAttribute="trailing" secondItem="DpZ-Eg-Cby" secondAttribute="trailing" id="Pzn-yN-f1c"/>
+                            <constraint firstItem="FOz-i3-Fl7" firstAttribute="top" secondItem="DpZ-Eg-Cby" secondAttribute="top" id="T6I-HX-dTT"/>
+                            <constraint firstItem="ybl-Ov-tYh" firstAttribute="leading" secondItem="DpZ-Eg-Cby" secondAttribute="leading" id="Wzw-R5-acI"/>
+                            <constraint firstItem="FOz-i3-Fl7" firstAttribute="leading" secondItem="DpZ-Eg-Cby" secondAttribute="leading" id="rW2-mD-3V5"/>
+                            <constraint firstItem="DpZ-Eg-Cby" firstAttribute="bottom" secondItem="ybl-Ov-tYh" secondAttribute="bottom" id="vet-zZ-M3m"/>
+                            <constraint firstItem="FOz-i3-Fl7" firstAttribute="trailing" secondItem="DpZ-Eg-Cby" secondAttribute="trailing" id="vjd-Hr-zje"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DpZ-Eg-Cby"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1551" y="121"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="shT-DW-PMq">
+            <objects>
+                <viewController id="WEd-bz-qVP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cID-Xf-WxP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="4Fx-nC-DZb">
+                                <rect key="frame" x="131" y="368" width="152" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfw-2k-aXG">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="59"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                        <state key="normal" title="Student">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jF-m6-pDj">
+                                        <rect key="frame" x="0.0" y="101" width="152" height="59"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                        <state key="normal" title="Advisor">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4Fx-nC-DZb" firstAttribute="centerY" secondItem="cID-Xf-WxP" secondAttribute="centerY" id="DRz-6L-ggZ"/>
+                            <constraint firstItem="4Fx-nC-DZb" firstAttribute="centerX" secondItem="cID-Xf-WxP" secondAttribute="centerX" id="cXf-gd-cWv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kKb-K0-3tv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rX8-bp-xWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.41964285714278" y="120.28985507246378"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="tusk" width="341" height="341"/>
+    </resources>
 </document>
